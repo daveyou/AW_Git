@@ -13,7 +13,7 @@ BEGIN
     SET NOCOUNT ON;
 
     -- Print error information. 
-    PRINT 'Error ' + CONVERT(varchar(90), ERROR_NUMBER()) +
+    PRINT 'Error ' + CONVERT(varchar(11), ERROR_NUMBER()) +
           ', Severity ' + CONVERT(varchar(5), ERROR_SEVERITY()) +
           ', State ' + CONVERT(varchar(5), ERROR_STATE()) + 
           ', Procedure ' + ISNULL(ERROR_PROCEDURE(), '-') + 
