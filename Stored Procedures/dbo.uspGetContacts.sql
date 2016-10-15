@@ -8,6 +8,9 @@ GO
 CREATE PROCEDURE [dbo].[uspGetContacts]
     @parameter_name AS INT
 -- WITH ENCRYPTION, RECOMPILE, EXECUTE AS CALLER|SELF|OWNER| 'user_name'
-AS SELECT * FROM Person.ContactType
+AS
+    SELECT  ContactTypeID ,
+            Name
+    FROM    Person.ContactType;
     
 GO
